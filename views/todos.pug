@@ -1,0 +1,10 @@
+form(action="/todos", method="GET")
+  input(type="text", name="q")
+  button Search
+  
+ul
+  each work in works
+    li= work.name
+    
+    
+a(href="/todos/create") Go to create
